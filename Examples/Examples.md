@@ -1,0 +1,42 @@
+%% Begin Waypoint %%
+- **b2**
+	- [[b2_sport_client]]
+	- [[b2_stand_example]]
+- **b2w**
+	- [[b2w_sport_client]]
+	- [[b2w_stand_example]]
+- **common**
+	- [[motor_crc_hg]]
+	- [[motor_crc]]
+	- [[ros2_b2_sport_client]]
+	- [[ros2_sport_client]]
+- **g1**
+	- **audio_client**
+		- [[g1_audio_client_example]]
+	- **dex3**
+		- [[g1_dex3_example]]
+	- **high_level**
+		- [[g1_arm_action_example]]
+		- [[g1_arm_sdk_dds_example]]
+		- [[loco_client_example]]
+	- **lowlevel**
+		- **behavior_lib**
+
+		- [[g1_ankle_swing_example]]
+		- [[g1_dual_arm_example]]
+		- [[g1_low_level_example]]
+- **go2**
+	- [[go2_robot_state_client]]
+	- [[go2_sport_client]]
+	- [[go2_stand_example]]
+- **h1-2**
+	- **lowlevel**
+		- [[low_level_ctrl_hg]]
+- [[low_level_ctrl]]
+- [[read_low_state_hg]]
+- [[read_low_state]]
+- [[read_motion_state]]
+- [[read_wireless_controller]]
+- [[record_bag]]
+
+%% End Waypoint %%
