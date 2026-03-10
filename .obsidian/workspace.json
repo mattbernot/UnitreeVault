@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Controller.md",
+                "file": "Links.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Controller"
+              "title": "Links"
             }
           }
         ]
@@ -198,15 +198,23 @@
   },
   "active": "f12c7897c5bd53d3",
   "lastOpenFiles": [
-    "Examples/common/ros2_sport_client.md",
+    "Examples/low_level_ctrl.md",
     "Controller.md",
+    "VLN-Go2-Matterport.md",
+    "Examples/read_low_state.md",
+    "YOLO_ROS.md",
+    "GO2_ROS2_SDK.md",
+    "YOLOv8 Class names.md",
+    "Links.md",
+    "YOLOv8.md",
+    "bashrc.md",
+    "ROS2 Humble.md",
+    "Examples/common/ros2_sport_client.md",
     "Examples/Examples.md",
     "Examples/record_bag.md",
     "Examples/read_wireless_controller.md",
     "Examples/read_motion_state.md",
     "Examples/read_low_state_hg.md",
-    "Examples/read_low_state.md",
-    "Examples/low_level_ctrl.md",
     "Examples/h1-2/lowlevel/low_level_ctrl_hg.md",
     "Examples/go2/go2_stand_example.md",
     "Examples/go2/go2_sport_client.md",
@@ -216,15 +224,7 @@
     "Examples/g1/lowlevel/g1_ankle_swing_example.md",
     "Examples/g1/high_level/loco_client_example.md",
     "Examples/g1/high_level/g1_arm_sdk_dds_example.md",
-    "Examples/g1/high_level/g1_arm_action_example.md",
-    "Examples/g1/dex3/g1_dex3_example.md",
     "Examples/g1/audio_client/test.wav",
-    "Examples/g1/audio_client/g1_audio_client_example.md",
-    "Examples/common/ros2_b2_sport_client.md",
-    "Examples/common/motor_crc_hg.md",
-    "Examples/common/motor_crc.md",
-    "Examples/b2w/b2w_stand_example.md",
-    "Examples/b2w/b2w_sport_client.md",
     "Examples/record_bag.cpp",
     "Examples/read_wireless_controller.cpp",
     "Examples/read_motion_state.cpp",

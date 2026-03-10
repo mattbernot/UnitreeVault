@@ -13,6 +13,6 @@ OLDPWD=/home/katapult/unitree_ros2/cyclonedds_ws/src
 
 
 
-your_domain_id = 100
+your_domain_id = 0
 `export ROS_DOMAIN_ID=<your_domain_id>`
 
