@@ -52,3 +52,10 @@ https://developer.nvidia.com/embedded/jetpack-archive
 
 Torch :== 2.0
 TorchVision :== 0.15
+
+Warehouse: https://universe.roboflow.com/search?q=class%3Awarehouse
+
+Lvis: https://docs.ultralytics.com/datasets/detect/lvis/#key-features
+
+https://hackmd.io/@c12hQ00ySVi6JYIERU7bCg/ByAOr12qJg
+

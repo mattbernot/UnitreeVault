@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "disableAutosuspend.sh.md",
+                "file": "audio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "disableAutosuspend.sh"
+              "title": "audio"
             }
           }
         ]
@@ -183,6 +183,10 @@
   "active": "a557b07b49f10f3c",
   "lastOpenFiles": [
     "Links.md",
+    "audio.md",
+    "lvis.yaml.md",
+    "YOLOv8 Class names.md",
+    "Startup_script.md",
     "disableAutosuspend.sh.md",
     "Topics/_utlidar_imu.md",
     "Topics/_utlidar_cloud_base.md",
@@ -204,10 +208,6 @@
     "Topics/_uslam_client_command.md",
     "Topics/_sportmodestate.md",
     "Topics/_slam_key_info.md",
-    "Topics/_servicestate.md",
-    "Topics/_uslam_localization_odom.md",
-    "Topics/_uslam_map_file_pub.md",
-    "Topics/_lf_sportmodestate.md",
     "export_ros2_topics.sh",
     "Topics",
     "Examples/g1/audio_client/test.wav",
