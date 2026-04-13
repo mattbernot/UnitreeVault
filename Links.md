@@ -59,3 +59,7 @@ Lvis: https://docs.ultralytics.com/datasets/detect/lvis/#key-features
 
 https://hackmd.io/@c12hQ00ySVi6JYIERU7bCg/ByAOr12qJg
 
+Librealsense (camera + maybe SLAM)
+https://github.com/realsenseai/librealsense
+Camera Depth Quality:
+https://github.com/realsenseai/librealsense/tree/master/tools/depth-quality
