@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "G1.md",
+                "file": "Resolving torch.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "G1"
+              "title": "Resolving torch"
             }
           }
         ],
@@ -197,14 +197,17 @@
   },
   "active": "4071d8caf6dbbb96",
   "lastOpenFiles": [
-    "Go2 API id.md",
+    "Links.md",
+    "Resolving torch.md",
+    "Startup_script.md",
+    "bashrc.md",
+    "bash script.md",
     "G1.md",
+    "Go2 API id.md",
     "z4rtc help.md",
     "audio.md",
-    "Links.md",
     "lvis.yaml.md",
     "YOLOv8 Class names.md",
-    "Startup_script.md",
     "disableAutosuspend.sh.md",
     "Topics/_utlidar_imu.md",
     "Topics/_utlidar_cloud_base.md",
@@ -220,9 +223,6 @@
     "Topics/_utlidar_lidar_state.md",
     "Topics/_utlidar_voxel_map_compressed.md",
     "Topics/_utlidar_grid_map.md",
-    "Topics/_utlidar_height_map.md",
-    "Topics/_utlidar_cloud.md",
-    "Topics/_uslam_cloud_map.md",
     "export_ros2_topics.sh",
     "Topics",
     "Examples/g1/audio_client/test.wav",
