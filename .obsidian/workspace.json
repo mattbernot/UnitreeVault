@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Links.md",
+                "file": "z4rtc help.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Links"
+              "title": "z4rtc help"
             }
           }
         ],
@@ -197,6 +197,10 @@
   },
   "active": "4071d8caf6dbbb96",
   "lastOpenFiles": [
+    "realsense/DepthQualityTesting-White-Paper-Rev1.2_220301.pdf",
+    "realsense/realsense_DQT.png",
+    "Links.md",
+    "realsense",
     "lvis.yaml.md",
     "YOLOv8.md",
     "z4rtc help.md",
@@ -205,7 +209,6 @@
     "Topics/_api_assistant_recorder_request.md",
     "ROS2 Humble.md",
     "Resolving torch.md",
-    "Links.md",
     "Startup_script.md",
     "bashrc.md",
     "bash script.md",
@@ -222,7 +225,6 @@
     "Topics/_xfk_webrtcreq.md",
     "Topics/_uwbswitch.md",
     "Topics/_uwbstate.md",
-    "Topics/_slam_info.md",
     "export_ros2_topics.sh",
     "Topics",
     "Examples/g1/audio_client/test.wav",
@@ -230,8 +232,6 @@
     "Examples/read_wireless_controller.cpp",
     "Examples/read_motion_state.cpp",
     "Examples/read_low_state_hg.cpp",
-    "Examples/read_low_state.cpp",
-    "Examples/low_level_ctrl.cpp",
-    "Examples/h1-2/lowlevel/low_level_ctrl_hg.cpp"
+    "Examples/read_low_state.cpp"
   ]
 }

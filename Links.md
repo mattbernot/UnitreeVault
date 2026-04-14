@@ -75,10 +75,14 @@ https://github.com/realsenseai/realsense-ros
 
 Librealsense (camera + maybe SLAM)
 https://github.com/realsenseai/librealsense
-Camera Depth Quality:
+Camera Depth Quality: rs-depth-quality
 https://github.com/realsenseai/librealsense/tree/master/tools/depth-quality
 
+https://github.com/realsenseai/librealsense/blob/master/wrappers/python/examples/opencv_viewer_example.py
 
+https://github.com/ridanlukita/3D-scan-and-reconstruction-realsense-d435i
 ## Random
 
 Adafruit time of flight: https://www.adafruit.com/product/5396
+
+Visual Odometry: https://github.com/YukunXia/SuperPoint-Stereo-Visual-Odometry/tree/test_two_batches?tab=readme-ov-file
