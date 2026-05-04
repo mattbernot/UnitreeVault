@@ -1,0 +1,78 @@
+Installing Piper TTS on an NVIDIA Jetson Orin Nano running JetPack 5.1.1 (Ubuntu 20.04) is best achieved by building the core components from source to ensure compatibility with the ARM64 architecture and JetPack's CUDA environment. 
+
+Here is the step-by-step installation process based on Jetson-optimized workflows.
+
+1. System Preparation
+
+Update your Jetson and install necessary build tools. ![Cytron Technologies Singapore](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAABL1BMVEX///8NpNsAodoAn9kAAAD7/v8AndjhgyYAptwjHyAAmte23/L8/Pzx+/3u+f3U7/n++PKxsLDg4ODw7+9IsuDe8/q/5/UWERP19fWhoKCYl5eDgoJ6yOnN6/cAltWg2fD85dH0lT75xptYVVbOzc3VfCQrIiD5jyp2c3TqiCZQTE2Pjo5ta2wyLi9iX1/DwsNmwOaL0Oz3t4D738X2qmX60bD97eA9PkIJGiMrHRhMNSE4Jhw3KiUbCwBDJARsPhO2aSCWWCCHTxxmNAB1SCSJZEjHua9SLg2kYCDUcw2iWQ9UPjGPTgpxTTbEciNaOiNrUkGcZjrWvKXNpoSqd02ljHiqbTWPgXhxZl62o5Xo3M+6j21nQyXCj2AjAACedVPSgzyWd2EvGQL1olLyhARK45ELAAAJKElEQVR4nO1ZC3ea2BpFEERRXgJqhMEHNhI1PESSttNGnbYm7TTTdqa909ftzND//xvudw7gIzG3mXVLZt212GkNnHM43z772+dBJIgcOXLkyJEjR44cOXJ8A9VmHaH5z0SvS63R8Ljf74/bLUf+BwjIk2JjjaOhddfxm7Jz3CinaBQbx071DsPLB8OT03L5/j0U/d6Dh/fLp40fR/U7il51+o1Hj8/mg8Hg8iEisICrwXz505Onz+6Cgzwsr5bzkn0IsBegw8Pzkm1fXFzYpYvnT8PM4zsvfr4s2RfPl09evlyWLh88fPDLq3np9Zs3v/42t+3Lt2LG8Vv3B7Y9eDqSJMmRW+f22aJ0efTO/uI8c6wP79+VXn/INr7zeFUqlf7lSKNxf3hAv7LnTw5LL97Zy9NG48ffxfcXz7Odj1Z5eQkElqdFWAROG63+3H68Wk0W9vnD8ulp8cOzi5+lLOM3x6A2EJjfPz0tf1ouFvPB/PWvX1aX9uDyfLE8e/txsPyUJQHn5NXnEsJicTkoAZX5p1/eVq1/P4FpYMPtAMR57mRIoH/85e0fmIE9mJ+ff1o9PvvTIpr94ur8fD4fIBLLwTi7+M3Jq5efP5bABYuz1Wr14PcDS0Yrjzx6VCw++mt1drZcfvx8kt3O5JTn5+/e/7Fcvfvt7XuJ3qqxrNaoPX7xYvL0WfUouxxIq9L86eLDG8mxLKe1Pd+k1sFBS5JkS64Sw+zmQeun8/fVJuxE7ZHk7J5Dms267MSUWgfZEXhhxcHw59a+Ux+1W+tbqZ3ZviwdrUddbfWPNiMdjU6KozSsNMyMgDxZ590pTurt1G3ymBg1JqkEB9kpQJTXBm8XJ9ZwlBI4GU8aJymBcSuz+MQ4DUlIsBcU13Y/gK1hHXaS4W5grXWujxuN400F7M2p7vIkwyNy/WSdg6Ys738faB3vLf5OkCZbBtsaaX3tzi2OWaB5tHFY83gkWTKCJQ0nqRytk2xP59ZmIlTbxRiNSaPYSsJaWToAo3VvHaFeLA7haAgyWO2kUD7J9ECEcbBZjSQpGbecFMlH7czjA4Nyqjfswk1A3YrTUnUm2e1D25Amw0Txpgw7s+PUMSF5OMl0AmwBVqHR7ipQbTrDyZ29G0I8q39vLFlJQHhRHvUno7t9QW9ao+Oj/nF7NGqjv1IMW/W905/ewvcnUXdarYN2++Dq30doXhUMzvR011U2cF3d80zOEFS+9l3J7I6cN0zPVdgCi6DADwZJUkzlB4RKpcAqrmdqAv89SSDUaiqHBg0DNTVja5i1Wo1XVUHTQBREjsRcKMSDU/m/IQYvgHw3tqcNTROEb/ZYAyamrrBUhQGAGrpm1G4TneZ0JKzicjc1B5sZLnebvqCpCiRIhqQgN1RB8bhvCqG5ZIUhARXGvSF5EJ4qqLcigAFuASGoQqFAVSgY2M3igm4ecGULGCSl722pugWKdG8fH3MQPKXC4F5JEpJxEwVVqaA2SAHUmNqrMwttKOF6+fUFgOa3BKc1txB3S1YqrG7s40C7SCeG1U1OR01JvaYB4mA8ujR4zcSdaBotoAJaM00NzFLTYDXQTSPuCFUJgua5rqdtuq8ZLsnE6jI/kLpxnYCH47sovbSObONqSAwFx1dQgQfFuAdK4WHOMyQYjKE0wsS/KaaAfUNDFawPJC7ZjgMqMPh5BTJCuVd9ZGB93Nj8HPQAyWJQLCwOXDGKqpCJQUyTwdmCeld1YZ5Be6QuYsAxcbIx01231LwCKma9muEprLdrc5wAJcmuymmCWhMYRAnxwSlRtTg+SbKqm16SAiJXYCoVVEKZ0BGuYth4sFfmEkfh50yUNn0nD2rluu9SAlicAkdwsQKs4hl4rsAqp3A4fkHXwGXQWiEEVEUWTB4ZiVSuuk1DGpBxalRha7HxsDa7jdWEAIrLwKykVRxM4GncmlEMnufwcD0adY1GTGCbslysBKkTV4HrY2ftZmBP84SAx6RDQT5FjHgFj45H7sDPoUo8dKWGVQKJacxxj9lxikjtSqmqbGWANuI9jEeRdSQ3ySJz4M4p6NNAmWRR5yq7do6JTSxQSeZxtq9IimFgk3p7CSR8TRbt6kAEK4CjmqhcY5PON3IZqU+JGiqkuFQkAlmAuhoGg7yZQKwAB+swVUkIIMcUqDg3uHN4sobzLqyLcC3OrYIVYdQkIezePQMTMPcRiK2hsTjB8CxNJdM+nkw4A0h4jlzbKB4wjVjjWail3eA27r4tVcApuLaax9ZwPVgg0KMsMgkdx4+znSSPNT0NZyAegobLFF0pxJNOT/PlJl68Dpyq69sZl+5WFJ6n+NGEAJN4E6/VkB4TWyFWF8+HZN0D1XAGkGF58qYMIKnIfTXpMovr45A0Gy/PSQsz5qiYZCI7loBNl2cK1mEurTKprQd3EsDGi9p18DpLoaMISSl6sn7yWwZAt+goQDGw9YBE63lswDRBxwh8SkJVZHxBxhdXYADfdHxXQWseOlbrppAun/HquFlLeDiNeibPIWxt9Sq6j0986yptt00KlD1KuflAR9fWZ1zD5NzCer6IIpzLt78lEve8n+wr2wFsYbCR6bc7qOtMIT6VIEai74vVXtDZxPKn6+uOmJZ1iP8G1UQ5dvcehq6DVpL9HNOd2odhaNtTUEJEIxU7XbiOhQm7HVQCjdAFUqGKinHdFngPbMHeNjzanZGLCslKMut2Q78bhZ0IPsRuEPS608gXe1F3JkaH/tT2uz7Ri4heF36H0Kgj+lC36Y3TWYZ1zb9xmK7Bu83m5cAPomnXj4jpbGrPpl97Ye8w8quzbjgFYoHod8PZIaSJmE39KAz80J/1gnAWxRrwGswTRjFv92KyF2I0CyK/51f9IOh2eoFY9e1uj4Bh+34Y9Qh7RnTsTtTrBH4UoOwQRBRBncirMLPg1OLdeBK/HcLDMPg69XvTw06vCyMkxG5v1gXBO72ZCEp/hTFH4WHHD9Dwu7NpTwyCTs9CKurwfvo/vySHkQhCB9MwAITBDIwXhlEYBlHUIYJgZkNxJ+yK0ygAPXoRfIRRFFjc93pDB2eL+B/8Rz94SUC36BtsEbyIruMyUUz9n/2322uA+3LkyJEjR44cOXLkyJEjR44cOXLk+D/HfwBezwTOKMkgDQAAAABJRU5ErkJggg==)Cytron Technologies Singapore
+
+bash
+
+```
+sudo apt update
+sudo apt upgrade
+sudo apt install -y cmake git build-essential python3-pip
+```
+
+2. Build Piper from Source
+
+Clone and compile the Piper TTS engine for local usage. 
+
+bash
+
+```
+cd ~
+git clone https://github.com/rhasspy/piper.git
+cd piper
+# Build the piper executable
+mkdir build
+cd build
+sudo cmake ..
+sudo make -j$(nproc)
+```
+
+3. Setup Dependencies and Models
+
+4. **Install eSpeak-ng**: Piper requires eSpeak-ng to convert text to phonemes.
+    
+    bash
+    
+    ```
+    sudo apt install -y espeak-ng
+    # Ensure espeak-ng data is available
+    sudo cp -r /usr/share/espeak-ng-data /usr/share/espeak-ng-data || true
+    ```
+    
+5. **Download a Voice Model**: Download an ONNX model for synthesis.
+    
+    bash
+    
+    ```
+    mkdir -p ~/piper/models
+    cd ~/piper/models
+    wget https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/medium/en_US-lessac-medium.onnx
+    wget https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/medium/en_US-lessac-medium.onnx.json
+    ```
+    
+     ![GitHub](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAEmklEQVRYha1XX2hbVRz+vnNv02xrIxu9N1mSlTiuIL26PdStiMjciyjq9ElkTwMfrMhEdOjDYEunU/BBJw71QXwUpA+WoQznZGygOOdEO6aCQWKbP7e5rptpM9qkyc+HJttdctNma76nnN/vnO/7zrknv3MO0SFs2w7Muu5uAfZAZAhAVMgoAFAkByAH8ncCJzYZxpnLly+XO+Hlah0ShhFZIA+LyF4AoQ79Fkl+HhQZS7uuc0cGLMvqnS8WDwJ4VUQ2dCh8KzlZAvBeXyh0NJVKLXZsoD7rCREZuRNhHyPngyLP+K1Gi4G4aW5bEvlagHg3xD1CGZ18IlMoTLY1kDCMyAJwodviXhNBYId3JVTjh2VZvQvkhFecwB8EviB55Q70rhEYJ/BLIyBAfIGcsCyrt8XAfLF4sPmbU6ljjus+d+/QUARKPQ9y2Tk5D/ISgXMEzoKcBPDfcoqzBPYPmGbYcd1nSR71corISH1zNyZ5Y9Olmnc7NW2n4zgXGm3bMPquaNrg6Ojon8lkstZEzHg8fo+mae7U1NTVRjwcDt+NWu3vW3jJUlDESruuQwCImObHIjLavIZK1x/I5/MX/da3U0Sj0cFqpfJPc5zkJ06h8KKybTtQLzKtqFaH1iIOALVazfaLi8he27YDatZ1d8OnwpEsQdPOrdWApmk/kfzXJxWadd3dSoA9bcYeyefzLUt3u8hms1cg8rpfToA9qn6wtEAPBL5cq3gDwQ0b/LlEhhSAaHOcZGl6ejrVLQPpdPoaySmfVFQ1jtQmFEhKtwwAAERmWkJkVNFTjG72lYGuigMA2cJJQCkAfju0PxwOm93STiQSQfh8agCuAuB7YVAij3bLwOL167tEpNcn5SiK/Og3SEReFpFVb0ydQIBX/OIUOa9Anm0zaMfmcPi1tYpHDGOfiDzmmyTPqtDGjd8CmPM1IfJuxDSPDA8P99yucDKZVBHTPCDAp226zG0SOdU4jI6LyEt1V+9r5M9VkTcgsg0ACEyD/EwB36tA4GImk5n1Y9y6detdpVJpWAEP1kT2QcRqZ5BKHXdmZvYrANBFjpEsAwCXB7oDIg+B/BUABNgiIoerIqcq5fKJZDLZ8tcFgOtzcxOo1b6r1WpvrShOLvaIHKtPbhkR0xwTkUP1ZlEPBGyS65bK5R+8dUFT6unczMwJP+JIJPKIVKtn2gl7DIw5hUIS8BShvlDo7frNBgBC1XJ5LJPJ/BUUuZ/kAQAfKKVeWN/f/007Yl3XJ9vlPOqTfaHQOzea3lw0Gt1SrVTOA9gMoEpNe8pxnJOrknoQNowKAL1NOq/19IzkcrlpXwMAEDPN7UsiJ2+YIE8DOE1gToDww7t2HR0fH6+uYGAJgOYnrpOPZwuF37xB30ITi8XiS5XKVxDZ3pwbMM3eld59YcOoovl8IS9puv5kLpdrORF9d3M2m830h0IjJMdI3vKkKpVKvmO8cjd1WSb55rr163f6ibc1AACpVGrRKRSSPYBNpT4EUAQ5n0gkllZUJ6+CnCf5kR4I3OcUCofS6fTCKqZXh20YfYODgxtX6xeLxeKWZXX6isb/mQzVddO1ixsAAAAASUVORK5CYII=)GitHub +1
+
+6. Running Piper TTS
+
+You can now use Piper to generate audio files from text. 
+
+bash
+
+```
+cd ~/piper/build
+echo "Hello from Jetson Orin Nano" | ./piper --model ~/piper/models/en_US-lessac-medium.onnx --output_file welcome.wav
+```
+
+To play the audio immediately, install `aplay` and pipe the output: 
+
+bash
+
+```
+echo "Hello from Jetson Orin Nano" | ./piper --model ~/piper/models/en_US-lessac-medium.onnx --output_file - | aplay
+```
+
+Optional: Docker Installation (Recommended for Production)
