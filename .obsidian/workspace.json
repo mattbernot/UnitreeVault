@@ -55,7 +55,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "v4l2_ctl_all.md",
+                "file": "installation_requirements/v4l2_ctl_all.md",
                 "mode": "source",
                 "source": false
               },
@@ -225,9 +225,14 @@
   },
   "active": "969b246cd5b4fe7e",
   "lastOpenFiles": [
+    "installation_requirements/pipreq3_10_12.txt",
+    "bashrc.md",
+    "installation_requirements/requirements.txt",
+    "installation_requirements/v4l2_ctl_all.md",
+    "installation_requirements",
+    "v4l2_ctl_all.md",
     "v4l2_ctl_get_parm.md",
     "VLN-Go2-Matterport.md",
-    "v4l2_ctl_all.md",
     "camera_config.md",
     "YOLOv8 Class names.md",
     "YOLOv8.md",
@@ -240,7 +245,6 @@
     "ROS2 Humble.md",
     "ROS2 Foxy installation.md",
     "Links.md",
-    "bashrc.md",
     "Controller.md",
     "disableAutosuspend.sh.md",
     "Foxglove.md",
@@ -252,15 +256,11 @@
     "Go2 API id.md",
     "Topics/_api_assistant_recorder_request.md",
     "Startup_script.md",
-    "bash script.md",
-    "audio.md",
     "export_ros2_topics.sh",
     "Topics",
     "Examples/g1/audio_client/test.wav",
     "Examples/record_bag.cpp",
     "Examples/read_wireless_controller.cpp",
-    "Examples/read_motion_state.cpp",
-    "Examples/read_low_state_hg.cpp",
-    "Examples/read_low_state.cpp"
+    "Examples/read_motion_state.cpp"
   ]
 }
